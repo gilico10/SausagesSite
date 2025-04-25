@@ -73,10 +73,45 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+        .nav-bar {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .nav-btn {
+            background: linear-gradient(90deg, #ff6b6b, #feca57);
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+        }
+        .nav-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="nav-bar">
+            <div class="nav-grid">
+                <a href="index.html" class="nav-btn">Main Page</a>
+                <a href="dash2.html" class="nav-btn">Dashboard 2</a>
+                <a href="dash3.html" class="nav-btn">Dashboard 3</a>
+            </div>
+        </div>
+
         <div class="header">
             <h1 class="text-4xl font-bold">Dashboard 1 - Sausage Sales Insights</h1>
             <p class="text-lg mt-2">Detailed Visualizations for Category and Customer Analysis</p>
